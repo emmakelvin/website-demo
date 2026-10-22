@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of a software developer — Python, Java, C#, web apps, databases, and AI.">
+  <title>Emma Klein · Software Developer Portfolio</title>
+  <!-- Google Fonts: Inter + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/portfolio.css">
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Home">
+        <i class="fas fa-code"></i> Klein.dev
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <div class="hero-badge">
+              <i class="fas fa-circle"></i> Available for Opportunities
+            </div>
+            <h1>Hi, I'm <span>Emma Klein</span><br>Software Developer</h1>
+            <div class="hero-subtitle">
+              I build <span class="typed-text" id="typedText">Software Developer</span>
+            </div>
+            <p>
+              Passionate about crafting useful, scalable, and reliable software.
+              I turn complex problems into clean, maintainable solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-eye"></i> View My Projects
+              </a>
+              <a href="#" class="btn btn-outline" id="downloadCvBtn">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
+            <div class="hero-socials">
+              <a href="https://github.com/emmakelvin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/emma-klein-4a936b446" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:kleinemma359@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-image reveal">
+            <div class="float-shape shape-1"></div>
+            <div class="float-shape shape-2"></div>
+            <!-- Fallback image if profile.jpg missing: uses placeholder avatar -->
+            <img src="/profile.jpg" alt="Emma Klein — Software Developer"
+                 onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Emma+Klein&background=3b82f6&color=fff&size=400&font-size=0.33'">
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="40">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="20">0</div>
+            <div class="stat-label">Technologies Used</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Client Collaborations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief introduction to who I am and what drives me.</p>
+        </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 16px;">Turning ideas into reliable software</h3>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+              I'm a software developer with a strong foundation in Python, Java, and C#. I enjoy building full-stack web applications, designing databases, and integrating APIs. My approach is methodical: understand the problem, plan the architecture, then write clean, tested code.
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+              I'm committed to continuous learning and staying current with modern tools. My career goal is to contribute to impactful projects in a collaborative team where I can grow and deliver value.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px;">
+              <span class="skill-tag"><i class="fas fa-check-circle"></i> Problem Solver</span>
+              <span class="skill-tag"><i class="fas fa-check-circle"></i> Fast Learner</span>
+              <span class="skill-tag"><i class="fas fa-check-circle"></i> Team Player</span>
+            </div>
+          </div>
+          <div class="about-image reveal">
+            <img src="/developers.jpg" alt="About Emma Klein"
+                 onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Emma+Klein&background=3b82f6&color=fff&size=400&font-size=0.33'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with regularly.</p>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+              <span class="skill-tag"><i class="fas fa-hashtag"></i> C#</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fas fa-flask"></i> Flask</span>
+              <span class="skill-tag"><i class="fab fa-microsoft"></i> ASP.NET</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+              <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+              <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+              <span class="skill-tag"><i class="fas fa-code"></i> Visual Studio</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-cogs"></i> Other Skills</h3>
+            <div class="skill-list">
+              <span class="skill-tag"><i class="fas fa-plug"></i> API Integration</span>
+              <span class="skill-tag"><i class="fas fa-bug"></i> Debugging</span>
+              <span class="skill-tag"><i class="fas fa-table"></i> Database Design</span>
+              <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-header reveal">
+          <div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle" style="margin-bottom: 0;">A selection of my recent work.</p>
+          </div>
+          <a href="https://github.com/emmakelvin" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            <i class="fab fa-github"></i> View All Projects
+          </a>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-buttons reveal" id="filterButtons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-wrapper reveal">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Project 1 -->
+            <article class="project-card" data-category="web python database">
+              <div class="project-img">
+                <img src="/result3.jpg" alt="Student Management System"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Student+Management'">
+              </div>
+              <div class="project-body">
+                <h3>Student Management System</h3>
+                <p>A full-stack web app to manage student records, courses, and grades.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Flask</span>
+                  <span class="project-tag">SQLite</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-category="web database">
+              <div class="project-img">
+                <img src="/result2.jpg" alt="Student Attendance Management System"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Attendance+System'">
+              </div>
+              <div class="project-body">
+                <h3>Student Attendance System</h3>
+                <p>ASP.NET Web Forms application for tracking and reporting attendance.</p>
+                <div class="project-tags">
+                  <span class="project-tag">ASP.NET</span>
+                  <span class="project-tag">C#</span>
+                  <span class="project-tag">SQL Server</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-category="web database">
+              <div class="project-img">
+                <img src="/hotel1.jpg" alt="Hotel Management System"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/10b981/ffffff?text=Hotel+Management'">
+              </div>
+              <div class="project-body">
+                <h3>Hotel Management System</h3>
+                <p>Web-based system for room booking, check-in/out, and billing.</p>
+                <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">C#</span>
+                  <span class="project-tag">SQL Server</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-category="python database">
+              <div class="project-img">
+                <img src="/result100.jpg" alt="Student Result Management System"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/f59e0b/ffffff?text=Result+Management'">
+              </div>
+              <div class="project-body">
+                <h3>Student Result Management</h3>
+                <p>Desktop app for managing and viewing student exam results.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Tkinter</span>
+                  <span class="project-tag">SQLite</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-category="ai python">
+              <div class="project-img">
+                <img src="/chatbot3.jpg" alt="AI Chatbot"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/ef4444/ffffff?text=AI+Chatbot'">
+              </div>
+              <div class="project-body">
+                <h3>AI Chatbot</h3>
+                <p>Conversational AI chatbot using Python and a modern AI API.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">AI API</span>
+                  <span class="project-tag">Flask</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" data-category="python database">
+              <div class="project-img">
+                <img src="/job application.jpg" alt="Job Application Management System"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/06b6d4/ffffff?text=Job+Applications'">
+              </div>
+              <div class="project-body">
+                <h3>Job Application Manager</h3>
+                <p>Track job applications, interviews, and follow-ups with ease.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">SQLite</span>
+                  <span class="project-tag">Tkinter</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                  <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Carousel controls -->
+          <div class="carousel-controls">
+            <button class="carousel-arrow" id="prevBtn" aria-label="Previous project">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-arrow" id="nextBtn" aria-label="Next project">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">What I can help you with.</p>
+        </div>
+        <div class="services-grid reveal">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <h3>Web Development</h3>
+            <p>Responsive, modern websites and web apps built with clean HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-cubes"></i></div>
+            <h3>Software Development</h3>
+            <p>Custom desktop and web software solutions tailored to your business needs.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Design</h3>
+            <p>Efficient, normalized database schemas and queries for SQLite, PostgreSQL, and SQL Server.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-plug"></i></div>
+            <h3>API Integration</h3>
+            <p>Seamlessly connect your applications with third-party APIs and services.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-bug"></i></div>
+            <h3>Bug Fixing & Maintenance</h3>
+            <p>Debug, optimize, and maintain existing codebases to keep them running smoothly.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-headset"></i></div>
+            <h3>Technical Support</h3>
+            <p>Reliable support for your software, from troubleshooting to feature enhancements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORK PROCESS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">My Work Process</h2>
+          <p class="section-subtitle">How I bring ideas to life, step by step.</p>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Discovery</h4>
+              <p>Understand the problem, gather requirements, and define the project scope.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Planning</h4>
+              <p>Design the solution architecture, database structure, and UI/UX flow.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Development</h4>
+              <p>Build the application using the most suitable technologies and best practices.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Testing</h4>
+              <p>Test functionality, usability, performance, and security to ensure quality.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4>Deployment</h4>
+              <p>Prepare the application for use and provide documentation for future maintenance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Testimonials</h2>
+          <p class="section-subtitle">Sample feedback from collaborators (placeholder).</p>
+        </div>
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-card active" data-index="0">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"Klein delivered the project on time with excellent code quality. Highly recommended!"</p>
+            <div class="testimonial-author">Sarah Johnson</div>
+            <div class="testimonial-role">Project Manager, TechCorp</div>
+          </div>
+          <div class="testimonial-card" data-index="1">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"Great communication and deep technical knowledge. Alex is a reliable developer."</p>
+            <div class="testimonial-author">Michael Chen</div>
+            <div class="testimonial-role">CTO, StartupHub</div>
+          </div>
+          <div class="testimonial-card" data-index="2">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"A talented developer who truly understands both frontend and backend."</p>
+            <div class="testimonial-author">Emily Davis</div>
+            <div class="testimonial-role">Lead Designer, CreativeStudio</div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-arrow" id="testimonialPrev" aria-label="Previous testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="testimonialDots"></div>
+            <button class="carousel-arrow" id="testimonialNext" aria-label="Next testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project in mind? Let's discuss how I can help.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p>kleinemma359@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <p>+256 783-514-761</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Location</strong>
+                <p>kampala, uganda</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <p>https://github.com/emmakelvin</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>https://www.linkedin.com/in/emma-klein-4a936b446</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="form-error" id="nameError">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="form-error" id="emailError">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+              <span class="form-error" id="subjectError">Please enter a subject.</span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="messageError">Please enter a message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Thank you! Your message has been validated locally. 
+              (Connect to a backend or email service to actually send.)
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo"><i class="fas fa-code"></i> Klein.dev</a>
+          <p>Building reliable, scalable software solutions with modern technologies.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/emmakelvin" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/emma-klein-4a936b446" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="mailto:kleinemma359@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Klein.dev. All rights reserved.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      /* ---------- THEME TOGGLE (persisted) ---------- */
+      const themeToggle = document.getElementById('themeToggle');
+      const htmlEl = document.documentElement;
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      if (storedTheme === 'dark') {
+        htmlEl.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else if (storedTheme === 'light') {
+        htmlEl.setAttribute('data-theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        // system preference fallback
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          htmlEl.setAttribute('data-theme', 'dark');
+          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          htmlEl.setAttribute('data-theme', 'light');
+        }
+      }
+
+      themeToggle.addEventListener('click', function() {
+        const current = htmlEl.getAttribute('data-theme');
+        const newTheme = current === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-theme', newTheme);
+        localStorage.setItem('portfolio-theme', newTheme);
+        themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      });
+
+      /* ---------- MOBILE NAV ---------- */
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', function() {
+        const isOpen = navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close mobile nav when link clicked
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          hamburger.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      /* ---------- ACTIVE NAV ON SCROLL ---------- */
+      const sections = document.querySelectorAll('section[id]');
+      const navLinkItems = document.querySelectorAll('.nav-link');
+
+      function updateActiveNav() {
+        let current = '';
+        const scrollPos = window.scrollY + 120;
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinkItems.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      /* ---------- SCROLL PROGRESS + BACK TO TOP ---------- */
+      const scrollProgress = document.getElementById('scrollProgress');
+      const backToTop = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', function() {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (window.scrollY / totalHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+        updateActiveNav();
+
+        if (window.scrollY > 500) {
+          backToTop.style.opacity = '1';
+          backToTop.style.pointerEvents = 'auto';
+        } else {
+          backToTop.style.opacity = '0';
+          backToTop.style.pointerEvents = 'none';
+        }
+      });
+
+      backToTop.style.opacity = '0';
+      backToTop.style.pointerEvents = 'none';
+      backToTop.style.transition = 'opacity 0.3s, transform 0.25s';
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      /* ---------- TYPED TEXT (hero) ---------- */
+      const typedText = document.getElementById('typedText');
+      const phrases = ['Software Developer', 'Full-Stack Developer', 'Python Developer', 'Java & C# Developer'];
+      let phraseIndex = 0, charIndex = 0, isDeleting = false;
+
+      function type() {
+        const current = phrases[phraseIndex];
+        if (isDeleting) {
+          typedText.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typedText.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let speed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === current.length) {
+          speed = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          speed = 500;
+        }
+        setTimeout(type, speed);
+      }
+      type();
+
+      /* ---------- REVEAL ANIMATIONS (Intersection Observer) ---------- */
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      /* ---------- STATS COUNTER ---------- */
+      const statNumbers = document.querySelectorAll('.stat-number');
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-count'), 10);
+            let count = 0;
+            const duration = 1500;
+            const stepTime = Math.max(16, duration / target);
+            const timer = setInterval(() => {
+              count++;
+              el.textContent = count;
+              if (count >= target) {
+                el.textContent = target;
+                clearInterval(timer);
+              }
+            }, stepTime);
+            statsObserver.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      statNumbers.forEach(el => statsObserver.observe(el));
+
+      /* ---------- PROJECT CAROUSEL ---------- */
+      const track = document.getElementById('carouselTrack');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('carouselDots');
+      let cards = Array.from(track.children);
+      let currentIndex = 0;
+
+      function getCardsPerView() {
+        if (window.innerWidth <= 768) return 1;
+        if (window.innerWidth <= 1024) return 2;
+        return 3;
+      }
+
+      function updateCarousel() {
+        const perView = getCardsPerView();
+        const totalPages = Math.max(1, Math.ceil(cards.length / perView));
+        const cardWidth = cards[0]?.getBoundingClientRect().width || 0;
+        const gap = 24;
+        const moveX = currentIndex * (cardWidth + gap) * perView;
+        track.style.transform = `translateX(-${moveX}px)`;
+
+        // dots
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'dot' + (i === currentIndex ? ' active' : '');
+          dot.setAttribute('aria-label', `Go to page ${i + 1}`);
+          dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateCarousel();
+          });
+          dotsContainer.appendChild(dot);
+        }
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= totalPages - 1;
+        prevBtn.style.opacity = prevBtn.disabled ? '0.4' : '1';
+        nextBtn.style.opacity = nextBtn.disabled ? '0.4' : '1';
+      }
+
+      function nextSlide() {
+        const perView = getCardsPerView();
+        const maxIndex = Math.max(0, Math.ceil(cards.length / perView) - 1);
+        if (currentIndex < maxIndex) {
+          currentIndex++;
+          updateCarousel();
+        }
+      }
+
+      function prevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      // Keyboard navigation
+      track.setAttribute('tabindex', '0');
+      track.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { e.preventDefault(); nextSlide(); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); prevSlide(); }
+      });
+
+      // Touch swipe
+      let touchStartX = 0;
+      track.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      track.addEventListener('touchend', (e) => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) nextSlide(); else prevSlide();
+        }
+      });
+
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const allCards = Array.from(track.children);
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.getAttribute('data-filter');
+
+          allCards.forEach(card => {
+            const categories = card.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Reset carousel with visible cards
+          cards = allCards.filter(c => c.style.display !== 'none');
+          currentIndex = 0;
+          updateCarousel();
+        });
+      });
+
+      // Handle resize
+      window.addEventListener('resize', () => {
+        currentIndex = 0;
+        updateCarousel();
+      });
+
+      // Initial carousel setup after images load
+      setTimeout(() => {
+        updateCarousel();
+      }, 100);
+
+      /* ---------- TESTIMONIAL SLIDER ---------- */
+      const testimonialCards = document.querySelectorAll('.testimonial-card');
+      const testimonialPrev = document.getElementById('testimonialPrev');
+      const testimonialNext = document.getElementById('testimonialNext');
+      const testimonialDots = document.getElementById('testimonialDots');
+      let testimonialIndex = 0;
+
+      function showTestimonial(index) {
+        testimonialCards.forEach((card, i) => {
+          card.classList.toggle('active', i === index);
+        });
+        // Update dots
+        testimonialDots.innerHTML = '';
+        testimonialCards.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.className = 'dot' + (i === index ? ' active' : '');
+          dot.setAttribute('aria-label', `Testimonial ${i + 1}`);
+          dot.addEventListener('click', () => {
+            testimonialIndex = i;
+            showTestimonial(testimonialIndex);
+          });
+          testimonialDots.appendChild(dot);
+        });
+      }
+
+      testimonialPrev.addEventListener('click', () => {
+        testimonialIndex = (testimonialIndex - 1 + testimonialCards.length) % testimonialCards.length;
+        showTestimonial(testimonialIndex);
+      });
+
+      testimonialNext.addEventListener('click', () => {
+        testimonialIndex = (testimonialIndex + 1) % testimonialCards.length;
+        showTestimonial(testimonialIndex);
+      });
+
+      showTestimonial(0);
+
+      /* ---------- CONTACT FORM VALIDATION ---------- */
+      const form = document.getElementById('contactForm');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const subjectInput = document.getElementById('subject');
+      const messageInput = document.getElementById('message');
+      const nameError = document.getElementById('nameError');
+      const emailError = document.getElementById('emailError');
+      const subjectError = document.getElementById('subjectError');
+      const messageError = document.getElementById('messageError');
+      const formSuccess = document.getElementById('formSuccess');
+
+      function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Name
+        if (!nameInput.value.trim()) {
+          nameError.classList.add('visible');
+          isValid = false;
+        } else {
+          nameError.classList.remove('visible');
+        }
+
+        // Email
+        if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
+          emailError.classList.add('visible');
+          isValid = false;
+        } else {
+          emailError.classList.remove('visible');
+        }
+
+        // Subject
+        if (!subjectInput.value.trim()) {
+          subjectError.classList.add('visible');
+          isValid = false;
+        } else {
+          subjectError.classList.remove('visible');
+        }
+
+        // Message
+        if (!messageInput.value.trim()) {
+          messageError.classList.add('visible');
+          isValid = false;
+        } else {
+          messageError.classList.remove('visible');
+        }
+
+        if (isValid) {
+          formSuccess.classList.add('visible');
+          form.reset();
+          setTimeout(() => formSuccess.classList.remove('visible'), 6000);
+        } else {
+          formSuccess.classList.remove('visible');
+        }
+      });
+
+      // Clear error on input
+      [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
+        input.addEventListener('input', function() {
+          const errorEl = document.getElementById(this.id + 'Error');
+          if (errorEl) errorEl.classList.remove('visible');
+        });
+      });
+
+      /* ---------- COPYRIGHT YEAR ---------- */
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      /* ---------- DOWNLOAD CV (placeholder) ---------- */
+      document.getElementById('downloadCvBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('CV download placeholder — replace with your actual CV file link.\n\nUpdate the href of the Download CV button to point to your PDF.');
+      });
+
+    })();
+  </script>
+</body>
+</html>
